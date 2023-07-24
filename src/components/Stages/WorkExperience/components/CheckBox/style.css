@@ -1,0 +1,423 @@
+.checkbox {
+    margin-top: 20px;
+}
+
+.checkbox .check-flex {
+    display: flex;
+    margin-top: 10px;
+}
+
+.check-flex div {
+    background-color: #F5F5F5;
+    width: 150px;
+    height: 36px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.check-flex div input {
+    margin-left: 50px;
+    accent-color: #038477;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.textInp {
+    margin-top: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #F5F5F5;
+    padding: 10px 20px;
+}
+
+.noCheck {
+    margin-left: 20px;
+}
+
+.duty {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.labourProfessionalism {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.labourProfessionalism div {
+    display: flex;
+    flex-direction: column;
+}
+
+.labourProfessionalism div select {
+    width: 240px;
+    border: none;
+    background-color: #F5F5F5;
+    padding: 10px 20px;
+    padding-right: 20px;
+    appearance: none;
+    accent-color: #038477;
+    border-radius: 25px;
+}
+
+.labourProfessionalism select option {
+    padding: 10px 20px;
+    background-color: #F5F5F5;
+    border: none;
+    accent-color: #038477;
+}
+
+.labourProfessionalism div select:focus {
+    outline: none;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-arrow {
+    position: absolute;
+    display: block;
+    width: 1em;
+    height: 1em;
+    background-color: #F5F5F5;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 15px;
+    pointer-events: none;
+}
+
+.custom-arrow .icon {
+    color: #038477;
+    font-size: 12px;
+}
+
+.startEnd {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-top: 20px;
+
+}
+
+.startEnd input {
+    width: 240px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #F5F5F5;
+    margin-top: 10px;
+
+}
+
+.workEnd {
+    margin-left: 25px;
+}
+
+/* .startEnd input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.startEnd input[type=date]::-webkit-datetime-edit-month-field {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.startEnd input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.startEnd input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+} */
+
+.options {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.options input {
+    margin-right: 10px;
+}
+
+.save {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.save-data {
+    display: flex;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 25px;
+}
+
+.save-data .icon {
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.notFound img {
+    width: 250px;
+    margin-top: 20%;
+}
+
+.form-1 {
+    height: 611px;
+    background-color: white;
+    width: 575px;
+    box-shadow: 3px 4px 2px 0px #F5F5F5;
+    border-radius: 12px;
+    padding: 30px 34px;
+}
+
+.form-1 h1 {
+    font-size: 18px;
+    line-height: 21.78px;
+    color: #038477;
+    font-weight: 400;
+}
+
+.nav {
+    width: 100%;
+    height: 22px;
+    border-radius: 8px;
+    background: rgb(3, 132, 119);
+
+    background: linear-gradient(90deg, rgba(3, 132, 119, 1) 50%, rgba(244, 244, 244, 1) 50%);
+    margin-top: 20px;
+}
+
+.checkbox h2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+}
+
+.checkbox {
+    margin-top: 20px;
+}
+
+.checkbox .check-flex {
+    display: flex;
+    margin-top: 10px;
+}
+
+.check-flex div {
+    background-color: #F5F5F5;
+    width: 150px;
+    height: 36px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.check-flex div input {
+    margin-left: 50px;
+    accent-color: #038477;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.textInp {
+    margin-top: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #F5F5F5;
+    padding: 10px 20px;
+}
+
+.noCheck {
+    margin-left: 20px;
+}
+
+.duty {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.labourProfessionalism {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.labourProfessionalism div {
+    display: flex;
+    flex-direction: column;
+}
+
+.labourProfessionalism div select {
+    width: 240px;
+    border: none;
+    background-color: #F5F5F5;
+    padding: 10px 20px;
+    padding-right: 20px;
+    appearance: none;
+    accent-color: #038477;
+    border-radius: 25px;
+}
+
+.labourProfessionalism select option {
+    padding: 10px 20px;
+    background-color: #F5F5F5;
+    border: none;
+    accent-color: #038477;
+}
+
+.labourProfessionalism div select:focus {
+    outline: none;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-arrow {
+    position: absolute;
+    display: block;
+    width: 1em;
+    height: 1em;
+    background-color: #F5F5F5;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 15px;
+    pointer-events: none;
+}
+
+.custom-arrow .icon {
+    color: #038477;
+    font-size: 12px;
+}
+
+.startEnd {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-top: 20px;
+
+}
+
+.startEnd input {
+    width: 240px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #F5F5F5;
+    margin-top: 10px;
+
+}
+
+.workEnd {
+    margin-left: 25px;
+}
+
+/* .startEnd input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.startEnd input[type=date]::-webkit-datetime-edit-month-field {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.startEnd input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.startEnd input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+} */
+
+.options {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.options input {
+    margin-right: 10px;
+}
+
+.save {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.save-data {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    border: none;
+    background-color: white !important;
+    border-radius: 25px;
+}
+
+.save-data .icon {
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.notFound img {
+    width: 250px;
+    margin-top: 20%;
+}

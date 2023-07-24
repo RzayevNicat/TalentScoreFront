@@ -1,0 +1,228 @@
+.form .form-education {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form {
+    margin-bottom: 40px;
+}
+
+.form span {
+    color: #038477;
+}
+
+.form .form-education label {
+    margin-bottom: 10px;
+}
+
+.form .form-education input {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+
+}
+
+.reading {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.reading label {
+    margin-right: 20px;
+}
+
+.start-end {
+    display: flex;
+    gap: 20px;
+}
+
+.meyyar {
+    display: flex;
+    gap: 20px;
+}
+
+.meyyar div {
+    background-color: #F2F6F6;
+    width: 200px;
+    padding: 10px;
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    border-radius: 25px;
+    font-size: 14px;
+
+
+}
+
+.meyyar div input {
+    accent-color: #038477;
+}
+
+.meyyar div:hover label {
+    color: #038477;
+}
+
+.meyyar div input {
+    position: absolute;
+    right: -40px;
+    top: 15px;
+}
+
+.lokal {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.lokal-inputs {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.lokal-inputs .biginp {
+
+    width: 600px;
+}
+
+.muraciet {
+    margin-top: 20px;
+
+}
+
+.muraciet-inputs {
+    margin-top: 10px;
+}
+
+.muraciet-inputs select {
+    width: 300px;
+}
+
+.btns {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.btns div {
+    width: 300px;
+    background-color: #F2F6F6;
+    padding: 2px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(138, 112, 112);
+}
+
+.btns div .icon {
+    color: #038477;
+    font-size: 25px;
+}
+
+.muraciet-inputs .elave {
+    background-color: #F2F6F6;
+    padding: 10px 40px;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+
+.muraciet-checkboxes {
+    background-color: #F2F6F6;
+    border-radius: 8px;
+    width: 300px;
+}
+
+span {
+    color: #038477;
+}
+
+.muraciet-checkbox {
+    color: #038477;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.muraciet-checkbox input[type=checkbox] {
+    opacity: 0;
+    transition: 1s;
+    border-radius: 50%;
+    border-color: #F2F6F6;
+}
+
+.muraciet-checkbox input[type=checkbox]:checked {
+    accent-color: #038477;
+    border-color: #F2F6F6;
+}
+
+.muraciet-checkbox:hover input[type=checkbox] {
+    opacity: 1;
+    transition: 1s;
+
+    border-color: #F2F6F6;
+}
+
+.secin {
+    width: 300px;
+    background-color: #F2F6F6;
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-align: start;
+}
+
+.ttile-check {
+    border: 1px solid gray;
+    padding: 2px 8px;
+    border-radius: 25px;
+    margin-top: 6px;
+}
+
+.ttile-check input {
+    margin-bottom: 10px;
+}
+
+.ttile-check div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.a {
+    position: absolute;
+    left: -30px;
+}
+
+.b {
+    position: absolute;
+    right: -30px;
+}
+
+.sbmt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.submitForm {
+    background-color: #F2F6F6 !important;
+    padding: 5px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+
+
+}

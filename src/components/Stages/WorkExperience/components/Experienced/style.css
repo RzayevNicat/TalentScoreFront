@@ -1,0 +1,27 @@
+.start {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.start input {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #F5F5F5;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.end input {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #F5F5F5;
+}

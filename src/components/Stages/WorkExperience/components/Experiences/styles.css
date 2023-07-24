@@ -1,0 +1,54 @@
+.experienceTable {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.tb {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.tablee {
+    display: flex;
+    width: 100%;
+    flex-direction: row !important;
+    border: 1px solid #d8d8d8;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.tablee p {
+    border: 1px solid #d8d8d8;
+    padding: 6px 20px;
+    margin-bottom: 0px;
+
+
+}
+
+.tablee .td1 {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 50%;
+}
+
+.tablee .td2 {
+    width: 40%;
+    font-size: 16px;
+}
+
+.tablee .td3 {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 10%;
+    padding-left: 15px;
+    cursor: pointer;
+
+
+
+}
+
+.tablee .td3 .icon {
+    font-size: 20px;
+
+}
