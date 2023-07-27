@@ -226,3 +226,18 @@ span {
 
 
 }
+
+.options {
+    border: 0;
+    color: #038477;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 10px;
+    appearance: none;
+
+
+}
+
+.elaveEt {
+    border: none !important;
+}

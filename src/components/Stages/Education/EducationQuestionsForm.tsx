@@ -97,20 +97,19 @@ console.log(educationPage);
       {
           DisplayEducation()
       }
-        </div> :<Educations/>
+        </div> :<Educations stageIndex={stageIndex} subStageSlug={subStageSlug}/>
     }
    
-
-      {/* <LinkButton
+   <LinkButton
         nav={{
           state: { stageName, subStageName },
           path: { slugName, subSlugName: prevSubSlugName },
         }}
-        type="outline"
-        
+        type='outline'
         label="Geri"
         className="absolute left-0 -bottom-20"
-      /> */}
+      />
+
 
       <LinkButton
         nav={{

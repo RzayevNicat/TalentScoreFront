@@ -8,24 +8,34 @@ import { useDispatch } from 'react-redux';
 import { Dispatch } from 'redux';
 import { EducationItem, removeEducation } from 'state/dataSlice';
 import { useGetStageQuery } from '../../../../services/stage';
-import { useNavigate } from 'react-router-dom';
+import { GeneralQuestionsFormProps } from "../../Education/GeneralQuestionsForm"
 import { apg } from 'state/dataSlice';
+import LinkButton from "../../../LinkButton";
 interface RootState {
 	dataa: {
 		education: [];
 	};
 }
-function Educations() {
+const Educations: React.FC<GeneralQuestionsFormProps> = ({ stageIndex, subStageSlug }) => {
 	const { data: stagesData } = useGetStageQuery();
 	const education: EducationItem[] = useSelector((state: RootState) => state.dataa.education);
 	const dispatch: Dispatch = useDispatch();
-	const navigate = useNavigate();
+	const {
+		slug: slugName,
+		stage_name: stageName,
+		stage_children,
+	} = stagesData?.[stageIndex] || {};
+	const { slug: subSlugName, stage_name: subStageName } =
+		stage_children?.[stageIndex + 2] || {};
+	
+	const { slug: prevSubSlugName, stage_name: prevSubStageName } =
+		stage_children?.[stageIndex] || {};
 	const handleDelete = (elem: EducationItem) => {
 		dispatch(removeEducation(elem));
 	};
 	const handleClick = () => {
 		dispatch(apg(1));
-		navigate('/stages/tehsil/umumi-suallar');
+		
 	};
 	return (
 		<div className="experienceTable">
@@ -53,9 +63,16 @@ function Educations() {
 				))
 			)}
 			<div className="save" onClick={() => handleClick()}>
-				<button className="save-data">
-					Əlavə et!<AiOutlinePlus className="icon" />
-				</button>
+			<LinkButton
+        nav={{
+          state: { stageName, subStageName },
+          path: { slugName, subSlugName: prevSubSlugName },
+        }}
+        type="outline"
+        
+        label="Əlavə Et! +"
+        className="elaveEt"
+      />
 			</div>
 		</div>
 	);

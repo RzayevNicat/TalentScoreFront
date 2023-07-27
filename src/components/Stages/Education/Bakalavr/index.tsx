@@ -6,6 +6,8 @@ import {AiOutlineCheck} from 'react-icons/ai'
 import { useSelector } from 'react-redux';
 import axios from 'axios'
 import {IoMdArrowDropdown} from 'react-icons/io'
+import {BsCircle} from 'react-icons/bs'
+import '../education.css'
 import {
     GeneralQuestionsFormProps
   } from "../GeneralQuestionsForm";
@@ -122,6 +124,8 @@ function Bakalavr(){
           sat:values.sat
 
           }
+          console.log(copy);
+          
           dispatch(addEducation(copy))
           resetForm({});
           if (educationId==='Bakalavr') {
@@ -138,11 +142,14 @@ function Bakalavr(){
           <Form className="form ">
             <div className="form-education ">            
               <label><span>Bakalavr</span> {questionsDatas[0]?.question_title} </label>
-                  <Field placeholder='Ölkə' name='country' as='select'>
-              <option value='ölkə'>Ölkə</option>
+                  <Field placeholder='Ölkə' name='country' as='select' className='select'>          
+                    <option value='ölkə' className='options'>Ölkə</option>
               {
                 questionsDatas[0]?.answers.map((elem, index) => (
-                  <option value={elem.answer_title} key={index}>{elem.answer_title}</option>
+               
+                     <option value={elem.answer_title} key={index} className='options'>{elem.answer_title}</option>
+                  
+                 
                 ))
               }
             </Field></div>
