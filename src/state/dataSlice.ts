@@ -1,5 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+
+// Example usage:
+
 export interface DataItem {
   id: number,
   company: string,
